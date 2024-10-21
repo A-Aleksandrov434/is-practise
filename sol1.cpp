@@ -5,6 +5,44 @@ using namespace std;
 
 int main() {
 
+	//0
+	cout << "Program for coffe!" << endl;
+
+	//1
+	int three_digit_num;
+	cout << "Enter a whole positive 3 digit number: " << endl;
+	cin >> three_digit_num;
+	
+		if (three_digit_num > 99 && three_digit_num < 1000) {
+			int first_digit = three_digit_num / 100;
+			int second_digit = (three_digit_num / 10) % 10;
+			int third_digit = three_digit_num % 10;
+
+			cout << "First digit: " << first_digit << endl;
+			cout << "Second digit: " << second_digit << endl;
+			cout << "Third digit: " << third_digit << endl;
+			cout << "sum of digits: " << first_digit + second_digit + third_digit << endl;
+
+
+	}
+	//2
+		int a, b;
+		cout << "a = ";
+		cin >> a;
+		cout << "b = ";
+		cin >> b;
+		int d = a;
+		a = b, b = d;
+		cout << "a = " << a << " b = " << b << endl;
+
+
+	//3
+	int number1, number2;
+	cout << "Enter two numbers: " << endl;
+	cin >> number1 >> number2;
+	cout << !(number1 % number2) << endl;
+
+
 	//4)
 	//i
 	int a, b;
