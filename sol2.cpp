@@ -113,38 +113,38 @@ int main()
 		}
 	
 
-	////zad6
-	////ñàìî áóëåâèÿ èçðàç:
-	//// ((SSD == "no" || RAM < 8) && price <= 800) || (price <= 1500 && USB_ports >= 3 && RAM >= 8 && SSD == "yes");
-	//// Ïî óñëîâèå â èçðàçà òðÿáâà äà å ... price >= 1000 && price <= 1500 ..., íî , ùå å ãëóïàâî Òèøêî äà íå êóïè ëàïòîïà ñàìî çàùîòî å ïîä 1000 ëåâà.
-	//int price, USB_ports, RAM;
-	//string SSD;
-	//cout << "Enter the laptop's price, USB ports, RAM capacity and if it has an SSD (yes/no): " << endl;
-	//cin >> price >> USB_ports >> RAM >> SSD;
-	//bool will_he_buy = ((SSD == "no" || RAM < 8) && price <= 800) || (price <= 1500 && USB_ports >= 3 && RAM >= 8 && SSD == "yes");
-	//string answer = will_he_buy ? "Tishko will buy the laptop" : "Tishko won't buy the laptop";
-	//cout << answer << endl;
+	//zad6
+	//само булевия израз:
+	// ((SSD == "no" || RAM < 8) && price <= 800) || (price <= 1500 && USB_ports >= 3 && RAM >= 8 && SSD == "yes");
+	// По условие в израза трябва да е ... price >= 1000 && price <= 1500 ..., но , ще е глупаво Тишко да не купи лаптопа само защото е под 1000 лева.
+	int price, USB_ports, RAM;
+	string SSD;
+	cout << "Enter the laptop's price, USB ports, RAM capacity and if it has an SSD (yes/no): " << endl;
+	cin >> price >> USB_ports >> RAM >> SSD;
+	bool will_he_buy = ((SSD == "no" || RAM < 8) && price <= 800) || (price <= 1500 && USB_ports >= 3 && RAM >= 8 && SSD == "yes");
+	string answer = will_he_buy ? "Tishko will buy the laptop" : "Tishko won't buy the laptop";
+	cout << answer << endl;
 	
-	////zad7
-	//int input;
-	//cout << "Enter a whole number which is bigger than 999 and smaller than 10000:" << endl;
-	//cin >> input;
-	//int first_digit_of_input = input / 1000;
-	//int second_digit_of_input = (input / 100) % 10;
-	//int third_digit_of_input = ((input / 10) % 100) % 10;
-	//int fourth_digit_of_input = input % 10;
-	//cout << first_digit_of_input << endl << second_digit_of_input << endl << third_digit_of_input << endl << fourth_digit_of_input << endl;
-	//string is_first_digit_odd = (first_digit_of_input % 2 == 0) ? "First digit is not odd." : "First digit is odd.";
-	//cout << is_first_digit_odd << endl;
-	//bool is_first_digit_the_biggest = first_digit_of_input >= second_digit_of_input && first_digit_of_input >= third_digit_of_input && first_digit_of_input >= third_digit_of_input;
-	// 
-	//if (is_first_digit_the_biggest)	{
-	//	cout << "The first digit of the number isn't the biggest of the number's digits" << endl;
-	//}
-	//else {
-	//	cout << "The first digit of the number is the biggest of the number's digits" << endl;
-	//}
-	//	
+	//zad7
+	int input;
+	cout << "Enter a whole number which is bigger than 999 and smaller than 10000:" << endl;
+	cin >> input;
+	int first_digit_of_input = input / 1000;
+	int second_digit_of_input = (input / 100) % 10;
+	int third_digit_of_input = ((input / 10) % 100) % 10;
+	int fourth_digit_of_input = input % 10;
+	cout << first_digit_of_input << endl << second_digit_of_input << endl << third_digit_of_input << endl << fourth_digit_of_input << endl;
+	string is_first_digit_odd = (first_digit_of_input % 2 == 0) ? "First digit is not odd." : "First digit is odd.";
+	cout << is_first_digit_odd << endl;
+	bool is_first_digit_the_biggest = first_digit_of_input >= second_digit_of_input && first_digit_of_input >= third_digit_of_input && first_digit_of_input >= third_digit_of_input;
+	
+	if (is_first_digit_the_biggest)	{
+		cout << "The first digit of the number isn't the biggest of the number's digits" << endl;
+	}
+	else {
+		cout << "The first digit of the number is the biggest of the number's digits" << endl;
+	}
+		
 	////ili 
 	//int biggest_digit = max(first_digit_of_input, second_digit_of_input);
 	//biggest_digit = max(biggest_digit, third_digit_of_input);
@@ -169,37 +169,3 @@ cout << "\n" << a;
 }
 
 
-
-
-
-//int main()
-//{
-//
-// /*   double x;
-//    cin >> x;
-//    double chis = x/(2*(x) - 1);
-//    double znam = sqrt(cos(x / (fabs(pow(x, 5) - 1))));
-//    double otg = sin(sqrt(chis / znam));
-//    cout << otg;*/
-//
-//    int a = 0, b = 1;
-//    if (a = b) {
-//        cout << "Yes";
-//    }
-//    else {
-//        cout << "No";
-//    }
-//    
-//
-//}
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
