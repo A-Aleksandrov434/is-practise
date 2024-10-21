@@ -7,109 +7,110 @@ using namespace std;
 
 int main() 
 {
-	////zad0
-	//int num1, num2;
-	//cout << "Enter the two numbers: " << endl;
-	//cin >> num1 >> num2;
-	//char action;
-	//cout << "Enter operator(+, -, ., ;): " << endl;
-	//cin >> action;
-	//switch (action)
-	//{
-	//case '+': cout << num1 << " + " << num2 << " = " << num1 + num2 << endl; break;
-	//case '-': cout << num1 << " - " << num2 << " = " << num1 - num2 << endl; break;
-	//case '.': cout << num1 << " . " << num2 << " = " << num1 * num2 << endl; break;
-	//case ':': cout << num1 << " : " << num2 << " = " << num1 / num2 << endl; break;
-	//default:
-	//	cout << "Error" << endl;
-	//	break;
-	//}
+	//zad0
+	int num1, num2;
+	cout << "Enter the two numbers: " << endl;
+	cin >> num1 >> num2;
+	char action;
+	cout << "Enter operator(+, -, ., ;): " << endl;
+	cin >> action;
+	switch (action)
+	{
+	case '+': cout << num1 << " + " << num2 << " = " << num1 + num2 << endl; break;
+	case '-': cout << num1 << " - " << num2 << " = " << num1 - num2 << endl; break;
+	case '.': cout << num1 << " . " << num2 << " = " << num1 * num2 << endl; break;
+	case ':': cout << num1 << " : " << num2 << " = " << num1 / num2 << endl; break;
+	default:
+		cout << "Error" << endl;
+		break;
+	}
 	
-	////zad1
-	//int year;
-	//cout << "Enter a year:  ";
-	//cin >> year;
-	//if ((year % 4 == 0 && year % 100 != 0) || year % 4 == 0 && year % 400 == 0)
-	//	cout << year << " is a leap year." << endl;
-	//else if (year % 4 != 0 || year % 400 != 0) {
-	//	cout << year << " is not a leap year." << endl;
-	//}
-	//else {
-	//	cout << "Error" << endl;
-	//}
+	//zad1
+	int year;
+	cout << "Enter a year:  ";
+	cin >> year;
+	if ((year % 4 == 0 && year % 100 != 0) || year % 4 == 0 && year % 400 == 0)
+		cout << year << " is a leap year." << endl;
+	else if (year % 4 != 0 || year % 400 != 0) {
+		cout << year << " is not a leap year." << endl;
+	}
+	else {
+		cout << "Error" << endl;
+	}
 	
-	////zad2
-	//char symbol;
-	//cout << "Enter a symbol: ";
-	//cin >> symbol;
-	//if (symbol >= 'a' && symbol <= 'z') {
-	//	cout << "The upper case character corresponding to it is " << (char)(symbol - 32) << endl;
-	//}
-	//else if (symbol >= 'A' && symbol <= 'Z') {
-	//	cout << "The lower case character corresponding to it is " << (char)(symbol + 32) << endl;
-	//}
-	//else {
-	//	cout << symbol << " is not letter." << endl;
-	//}
+	//zad2
+	char symbol;
+	cout << "Enter a symbol: ";
+	cin >> symbol;
+	if (symbol >= 'a' && symbol <= 'z') {
+		cout << "The upper case character corresponding to it is " << (char)(symbol - 32) << endl;
+	}
+	else if (symbol >= 'A' && symbol <= 'Z') {
+		cout << "The lower case character corresponding to it is " << (char)(symbol + 32) << endl;
+	}
+	else {
+		cout << symbol << " is not letter." << endl;
+	}
 	
 
-	////zad3
-	//int month;
-	//cout << "Enter a month(number): " << endl;
-	//cin >> month;
-	//switch (month)
-	//{
-	//case 12: case 1: case 2: cout << "The season is winter!" << endl; break;
-	//case 3: case 4: case 5: cout << "The season is spring!" << endl; break;
-	//case 6: case 7: case 8: cout << "The season is summer!" << endl; break;
-	//case 9: case 10: case 11: cout << "The season is autumn!" << endl; break;
-	//default: cout << "Error, Invalid month" << endl;
-	//	break;
-	//}
+	//zad3
+	int month;
+	cout << "Enter a month(number): " << endl;
+	cin >> month;
+	switch (month)
+	{
+	case 12: case 1: case 2: cout << "The season is winter!" << endl; break;
+	case 3: case 4: case 5: cout << "The season is spring!" << endl; break;
+	case 6: case 7: case 8: cout << "The season is summer!" << endl; break;
+	case 9: case 10: case 11: cout << "The season is autumn!" << endl; break;
+	default: cout << "Error, Invalid month" << endl;
+		break;
+	}
 
-	////zad4
-	//int a, b;
-	//cout << "Enter the values of a and b in 'ax + b = 0': " << endl;
-	//cin >> a >> b;
-	//
-	//if (a == 0 && b == 0) {
-	//	cout << "INF";
-	//}
-	//else if ( - b % a == 0)
-	//{
-	//	cout << -b/ a;
-	//}
-	//else
-	//{
-	//	cout << "NO";
-	//}
+	//zad4
+	int a, b;
+	cout << "Enter the values of a and b in 'ax + b = 0': " << endl;
+	cin >> a >> b;
+	
+	if (a == 0 && b == 0) {
+		cout << "INF";
+	}
+	else if ( - b % a == 0)
+	{
+		cout << -b/ a;
+	}
+	else
+	{
+		cout << "NO";
+	}
 
-	////zad5
-	//int year, month;
-	//cout << "Enter a year and a month (number):  " << endl;
-	//cin >> year >> month;
-	//	switch (month)
-	//	{
-	//	case 1: cout << 31 << endl; break;
-	//	case 2: 
-	//		if ((year % 4 == 0 && year % 100 != 0) || year % 4 == 0 && year % 400 == 0) {
-	//			cout << 29 << endl; break;
-	//		}
-	//		else {
-	//			cout << 28 << endl; break;
-	//		}	
-	//	case 3: cout << 31 << endl; break;
-	//	case 4: cout << 30 << endl; break;
-	//	case 5: cout << 31 << endl; break;
-	//	case 6: cout << 30 << endl; break;
-	//	case 7: case 8: cout << 31 << endl; break;
-	//	case 9: cout << 30 << endl; break;
-	//	case 10: cout << 31 << endl; break;
-	//	case 11: cout << 30 << endl; break;
-	//	case 12: cout << 31 << endl; break;
-	//	default: cout << "Error!";
-	//		break;
-	//	}
+	//zad5
+	int year1, month1;
+	cout << "Enter a year and a month (number):  " << endl;
+	cin >> year1 >> month1;
+		switch (month1)
+		{
+		case 1: cout << 31 << endl; break;
+		case 2: 
+			if ((year1 % 4 == 0 && year1 % 100 != 0) || year1 % 4 == 0 && year1 % 400 == 0) {
+				cout << 29 << endl; break;
+			}
+			else if (year1 % 4 != 0 || year1 % 400 != 0){
+				cout << 28 << endl; break;
+			} 
+	
+		case 3: cout << 31 << endl; break;
+		case 4: cout << 30 << endl; break;
+		case 5: cout << 31 << endl; break;
+		case 6: cout << 30 << endl; break;
+		case 7: case 8: cout << 31 << endl; break;
+		case 9: cout << 30 << endl; break;
+		case 10: cout << 31 << endl; break;
+		case 11: cout << 30 << endl; break;
+		case 12: cout << 31 << endl; break;
+		default: cout << "Error!";
+			break;
+		}
 	
 
 	////zad6
