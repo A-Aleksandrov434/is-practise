@@ -96,18 +96,23 @@ int main()
 		}
 	}
 	//zad9
-	int N;
-	cout << "Enter N: ";
-	cin >> N;
-	for (int i = 1; i <= N; i++)
-	{
-		for (int j = 1; j < i; j++) {
+int N;
+cout << "Enter N: ";
+cin >> N;
+for (int i = 1; i <= N; i++)
+{
+	for (int j = 1; j <= N; j++) {
+		if (j < i) {
 			cout << "-";
 		}
-		cout << 0;
-		for (int k = i + 1; k <= N; k++) {
+		else if (j == i) {
+			cout << 0;
+		}
+		else 
+		{
 			cout << "+";
 		}
-		cout << "\n";
 	}
+	cout << "\n";
+}
 }
