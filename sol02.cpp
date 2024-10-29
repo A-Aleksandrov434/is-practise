@@ -3,6 +3,7 @@
 using namespace std;
 int main()
 {
+	//22.10.24
 	//zad0
 	int n1, n_fact = 1;
 	cout << "Enter n: ";
