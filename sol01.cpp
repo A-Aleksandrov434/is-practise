@@ -7,6 +7,7 @@ using namespace std;
 
 int main() 
 {
+	//15.10.24
 	//zad0
 	int num1, num2;
 	cout << "Enter the two numbers: " << endl;
